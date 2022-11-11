@@ -1,0 +1,212 @@
+
+h1 {
+    color: ivory;
+    text-align: center;
+    font-size: 80px;
+    border-style: inherit; width: 1000px; border-radius: 15px;
+    background-color: rgb(130, 170, 161);
+    margin-left: auto; margin-right: auto; 
+}
+
+
+.navigation {
+    border-style: inherit; border-radius: 15px; width: 90%; height: 30px;
+    background-color: rgb(130, 170, 161);
+    display: inline-block; margin: 10px 10px 10px 5%; 
+    padding-top: 2px; padding-bottom: 3px;
+     color: ivory;
+     list-style: none;
+}
+
+.nav1 {
+    float: left; width: 25%;
+    text-align: center;
+}
+
+.nav2 {
+    float: left; width: 25%;   
+    text-align: center;
+}
+.nav3 {
+    float: left; width: 25%;
+    text-align: center;
+}
+
+.nav4 {
+    float: left; width: 25%;
+    text-align: center;
+}
+
+li {
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
+}
+
+a:visited {
+    color: ivory; text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(39, 110, 116);
+    
+}
+
+
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(39, 110, 116);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(86, 168, 175);
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  .slidess {
+    width: 30%;
+    border-style: inherit; border-radius: 15px;
+    background-color: rgb(130, 170, 161);
+    margin-left: 0%;
+  }
+
+  img {
+    width: 30%;
+    border-style: inherit; border-radius: 15px;
+    background-color: rgb(130, 170, 161);
+    margin-right: 0%; margin-left: 4%;
+  }
+
+
+  h2 {
+    color: ivory; text-align: center; font-size: 40px;
+    border-style: inherit; width: 500px; border-radius: 15px;
+    background-color: rgb(130, 170, 161);
+    margin-left: auto; margin-right: auto; 
+    padding-top: 5px; padding-bottom: 5px;
+  }
+
+  .border {
+    border-style: inherit; width: 100;
+    background-color: rgb(36, 102, 88);
+    margin-left: auto; margin-right: auto; 
+    padding-top: 10px; padding-bottom: 15px;
+  }
+
+  .homeborder {
+    border-style: inherit; width: 100;
+    background-color: rgb(36, 102, 88);
+    margin-left: auto; margin-right: auto; 
+    padding-top: 2px; padding-bottom: 2px;
+  }
+  
+  p {
+    color: ivory; text-align: center;
+  }
+  h3 {
+    color: ivory; text-align: center;
+    border-style: inherit; width: 500px; border-radius: 15px;
+    background-color: rgb(130, 170, 161);  
+  }
+
+.sideimg {
+  margin-left: 45%; margin-right: 0%;
+  margin-top: -71%; display: block;
+  width: 45%;
+  border-style: none; border-radius: 1%;
+}
+
+.sideimg2 {
+  margin-left: 45%; margin-right: 0%;
+  margin-top: -74%; display: block;
+  width: 45%;
+  border-style: none; border-radius: 1%;
+}
+
+.sideimg3 {
+  margin-left: 45%; margin-right: 0%;
+  margin-top: -72%; display: block;
+  width: 45%;
+  border-style: none; border-radius: 1%;
+}
+
+figcaption {
+  margin-left: 48%; margin-top: -3%;
+  font-size: large; color: ivory;
+}

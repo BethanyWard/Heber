@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <title>Heber</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+
+      <div class=homeborder>
+
+        <h1>Welcome to Heber Valley!</h1>
+
+      
+        <div class="navigation">
+
+        <div><li class="nav1"><a href="index.html">Home</a></li></div>
+        <div><li class="nav2"><a href="activities.html">Activities</a></li></div>
+        <div><li class="nav3"><a href="food.html">Local Food</a></li></div>  
+        <div><li class="nav4"><a href="attractions.html">Attractions</a></li></div>
+
+        </div>
+
+      </div>
+
+        <br> <br>
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img class="slidess" src="images/overlook.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/hike.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/foggy.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/road.jpg" style="width:100%">
+      </div>
+  
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <br> <br> <br> <br> <br>
+
+  <div class="homeborder">
+    <p>Email us at @hebervalley.yahoo.com</p>
+  </div>
+
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+
+    </body>
+
+</html>
